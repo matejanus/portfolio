@@ -91,7 +91,7 @@ main {
 
   .bio {
     grid-area: bio;
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 
   .job-1 {
@@ -202,5 +202,58 @@ main {
     font-size: 1rem;
   }
 }
+
+
+.project-info {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas:
+    "bio bio bio"
+    "job1 job2 job3";
+  grid-template-columns: repeat(3, 1fr);
+
+  .project-image {
+    grid-area: bioimage;
+    margin: auto;
+    border: $secondary-color 3px solid;
+    width: 100%;
+    height: auto;
+
+  //   &:hover {
+  //     position:relative;
+  //     top:-25px;
+  //     left:-35px;
+  //     width:150%;
+  //     height:auto;
+  //     display:block;
+  //     z-index:999;
+  // }
+  }
+
+  .project {
+    grid-area: bio;
+    font-size: 1rem;
+  }
+
+  .proj-1 {
+    grid-area: job1;
+  }
+
+  .proj-2 {
+    grid-area: job2;
+  }
+
+  .proj-3 {
+    grid-area: job3;
+  }
+
+  .proj {
+    background: lighten($primary-color, 5);
+    padding: 0.5rem;
+    border-bottom: $secondary-color 5px solid;
+    
+  }
+}
+
 
 @import "mobile";
