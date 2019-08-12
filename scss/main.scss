@@ -134,25 +134,25 @@ main {
 
 //contact page
 
-.boxes{
+.boxes {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
   margin-top: 1rem;
 
-  div{
+  div {
     font-size: 2rem;
     border: 3px #fff solid;
     padding: 1.5rem 2.5rem;
     margin-bottom: 3rem;
     @include easeOut;
 
-    &:hover{
+    &:hover {
       padding: 0.5rem 1.5rem;
       background: $secondary-color;
       color: set-text-color($secondary-color);
-      span{
+      span {
         color: set-text-color($secondary-color);
       }
     }
@@ -175,12 +175,12 @@ main {
 
 .btn-light {
   @extend .btn;
-  background: darken($primary-color,50);
+  background: darken($primary-color, 50);
   color: #fff;
 }
 .btn-dark {
   @extend .btn;
-  background:  lighten($primary-color,50);
+  background: lighten($primary-color, 50);
   color: #333;
 }
 
@@ -193,67 +193,63 @@ main {
 }
 
 #inConstruction {
-
-  h1{
+  h1 {
     font-size: 2.7rem;
     // word-wrap: break-word;
   }
-  h2{
+  h2 {
     font-size: 1rem;
   }
 }
-
 
 .project-info {
   display: grid;
   grid-gap: 30px;
   grid-template-areas:
-    "bio bio bio"
-    "job1 job2 job3";
+    "projInfo projInfo projInfo"
+    "proj1 proj2 proj3";
   grid-template-columns: repeat(3, 1fr);
 
   .project-image {
-    grid-area: bioimage;
+    grid-area: projImg;
     margin: auto;
     border: $secondary-color 3px solid;
     width: 100%;
     height: auto;
 
-  //   &:hover {
-  //     position:relative;
-  //     top:-25px;
-  //     left:-35px;
-  //     width:150%;
-  //     height:auto;
-  //     display:block;
-  //     z-index:999;
-  // }
+      &:hover {
+      border: 5px solid #f4f4f4;
+      transform: scale(1.2);
+        -webkit-transition-duration: 1s;
+      -moz-transition-duration: 1s;
+      -o-transition-duration: 1s;
+      transition-duration: 1s;
+       z-index: 3;
+    }
   }
 
   .project {
-    grid-area: bio;
+    grid-area: projInfo;
     font-size: 1rem;
   }
 
   .proj-1 {
-    grid-area: job1;
+    grid-area: proj1;
   }
 
   .proj-2 {
-    grid-area: job2;
+    grid-area: proj2;
   }
 
   .proj-3 {
-    grid-area: job3;
+    grid-area: proj3;
   }
 
   .proj {
     background: lighten($primary-color, 5);
     padding: 0.5rem;
     border-bottom: $secondary-color 5px solid;
-    
   }
 }
-
 
 @import "mobile";
