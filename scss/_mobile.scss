@@ -65,18 +65,13 @@
 
     .project-info{
         grid-template-areas:
-        'proj'
-        'proj'
+        'projInfo'
         'proj1'
         'proj2'
         'proj3';
         grid-template-columns: 1fr;
     }
 
-    .projects{
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
 }
 // smartphone
 @include mediaSm{
@@ -91,4 +86,5 @@
     .menu-branding{
         height: 30vh;
     }
+
 }

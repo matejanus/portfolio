@@ -235,10 +235,17 @@ main {
 
   .proj-1 {
     grid-area: proj1;
+    .project-image{
+    cursor: zoom-in;
+
+    }
   }
 
   .proj-2 {
     grid-area: proj2;
+
+    .project-image {
+    }
   }
 
   .proj-3 {
@@ -249,6 +256,15 @@ main {
     background: lighten($primary-color, 5);
     padding: 0.5rem;
     border-bottom: $secondary-color 5px solid;
+  }
+
+  input[type=checkbox] {
+    display: none;
+  }
+
+  input[type=checkbox]:checked ~ label > img {
+    transform: scale(2);
+    cursor: zoom-out;
   }
 }
 
