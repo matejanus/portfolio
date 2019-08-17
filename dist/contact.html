@@ -57,21 +57,50 @@
       <h2 class="sm-heading">
         This is how you can reach me
       </h2>
-     <div class="boxes">
-         <div>
-             <span class="text-secondary">Email:</span> mate.janus@gamil.com
-         </div>
-         <div>
-            <span class="text-secondary">Phone:</span> 724-061-273
+      <div class="boxes">
+        <div class="email_info">
+          <span class="text-secondary">Email:</span> mate.janus@gamil.com
+        </div>
+        <div class="phone_info">
+          <span class="text-secondary">Phone:</span> 724-061-273
+        </div>
+        <div class="container">
+          <form
+            action="https://formspree.io/mate.janus@gmail.com"
+            method="POST"
+            class = "contact_form"
+          >
+            <h3>Contact form</h3>
+            <label>
+              E-mail
+              <input type="email" name="email" class="email" />
+            </label>
+            <label>
+              Subject
+              <input type="text" name="subject" class="subject" />
+            </label>
+            <label class="message" name="message">
+              Message
+              <textarea class="message" name="message"></textarea>
+            </label>
+            <div class="status"></div>
+            <button type="submit" class="submit">
+              Send
+            </button>
+          </form>
         </div>
         <!-- <div>
             <span class="text-secondary">Address:</span> Wyszyńskiego 76/22, 50-331 Wrocław 
         </div> -->
-     </div>
+      </div>
     </main>
     <footer id="main-footer">
       By Mateusz Janus
     </footer>
+    <script>
+      src = "https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js";
+    </script>
     <script src="js/main.js"></script>
+    <script src="js/form.js"></script>
   </body>
 </html>
