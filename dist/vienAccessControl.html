@@ -64,64 +64,112 @@
         <div class="project">
           <h3 class="text-secondary">About the project</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
-            aperiam pariatur quo tempore magni ullam sapiente aut dignissimos!
-            Ut doloremque vitae corrupti, veritatis, quae cumque nisi dolorum
-            aspernatur nulla cupiditate natus temporibus non consequuntur
-            impedit in voluptatibus porro laborum velit excepturi ratione
-            placeat dolores repellat. Quod culpa quas nam voluptate.
+            The project is my master's thesis entitled "Access control based on
+            handheld biometrics". The project consisted in the development of a
+            device that would enable access control based on the topology of the
+            blood vessel network in the hand. In the project, I designed and
+            built the hardware and housing. The program consists of filtering
+            the input images using a neural network to recognize if the palm of
+            the hand is in the image. The next element is the segmentation and
+            enhancement of the blood vessel image, which is finally compared
+            with a model image stored in a database.
           </p>
         </div>
 
         <div class="proj proj-1">
-          <input type="checkbox" id="zoomCheck">
+          <input type="checkbox" id="zoomCheck" />
           <label for="zoomCheck">
-          <img
-            src="img/projects/vienAccessControl_1.jpg"
-            alt="Device"
-            class="project-image"
-          />
-        </label>
-          <h3>img1</h3>
+            <img
+              src="img/projects/vienAccessControl_1.png"
+              alt="Device"
+              class="project-image"
+            />
+          </label>
+          <h3>3D hardware model</h3>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam, rem
-            atque! Officia soluta nemo odit sint, veritatis accusamus voluptate
-            provident?
+            Assembled 3D models of designed hardware with Raspberry pi
           </p>
         </div>
 
         <div class="proj proj-2">
-          <input type="checkbox" id="zoomCheck2">
+          <input type="checkbox" id="zoomCheck2" />
           <label for="zoomCheck2">
-          <img
-            src="img/projects/vienAccessControl_2.png"
-            alt="Device"
-            class="project-image"
-          />
-        </label>
-          <h3>img2</h3>
+            <img
+              src="img/projects/vienAccessControl_2.jpg"
+              alt="Device"
+              class="project-image"
+            />
+          </label>
+          <h3>Photo of the constructed device</h3>
           <p>
-            Lorem ipsum dolor sit amet.:
+            Picture of the actual device with housing and distance sensors
           </p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
-          quos quidem est ut doloremque dolorem consequuntur cum ea ducimus
-          ipsam?
         </div>
 
         <div class="proj proj-3">
-          <input type="checkbox" id="zoomCheck3">
+          <input type="checkbox" id="zoomCheck3" />
           <label for="zoomCheck3">
-          <img
-            src="img/projects/vienAccessControl_3.png"
-            alt="Device"
-            class="project-image"
-          />
-        </label>
-          <h3>img3</h3>
+            <img
+              src="img/projects/vienAccessControl_3.png"
+              alt="Device"
+              class="project-image"
+            />
+          </label>
+          <h3>Neural network training plot</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-            fugit iure iusto voluptate, ratione dolore optio nihil eligendi
-            dignissimos. Excepturi?
+            A graph of neural network training designed on the basis of LeNet-5
+            architecture. The network was used as a filter to detect a hand in a
+            photo.
+          </p>
+        </div>
+
+        <div class="proj proj-4">
+          <input type="checkbox" id="zoomCheck3" />
+          <label for="zoomCheck3">
+            <img
+              src="img/projects/vienAccessControl_4.png"
+              alt="Device"
+              class="project-image"
+            />
+          </label>
+          <h3>Segmentation of area with the most veins</h3>
+          <p>
+            To segment the area I used the watershed segmentation algorithm. The
+            rest of the image is cut out.
+          </p>
+        </div>
+
+        <div class="proj proj-5">
+          <input type="checkbox" id="zoomCheck3" />
+          <label for="zoomCheck3">
+            <img
+              src="img/projects/vienAccessControl_5.png"
+              alt="Device"
+              class="project-image"
+            />
+          </label>
+          <h3>Enhancement of the image of the blood vessel network</h3>
+          <p>
+            Pre-enhanced vascular image using Contrast Limited Adaptive
+            Histogram Equalization algorithm(CLAHE)
+          </p>
+        </div>
+
+        <div class="proj proj-6">
+          <input type="checkbox" id="zoomCheck3" />
+          <label for="zoomCheck3">
+            <img
+              src="img/projects/vienAccessControl_6.png"
+              alt="Device"
+              class="project-image"
+            />
+          </label>
+          <h3>Comparison of two pictures of the same hand with each other</h3>
+          <p>
+            Comparison of two images of blood vessels of the same person. In
+            order to compare them, I used an algorithm for detecting features in
+            the image (ORB), which are then compared with each other using the
+            algorithm of the nearest neighbour.
           </p>
         </div>
       </div>
