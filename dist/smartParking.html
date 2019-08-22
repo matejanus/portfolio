@@ -58,70 +58,71 @@
         Smart <span class="text-secondary">Parking</span>
       </h1>
       <h2 class="sm-heading">
-        system wykrywania zajętości miejs parkingowych
+        system wykrywania zajętości miejsc parkingowych
       </h2>
       <div class="project-info">
         <div class="project">
           <h3 class="text-secondary">About the project</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
-            aperiam pariatur quo tempore magni ullam sapiente aut dignissimos!
-            Ut doloremque vitae corrupti, veritatis, quae cumque nisi dolorum
-            aspernatur nulla cupiditate natus temporibus non consequuntur
-            impedit in voluptatibus porro laborum velit excepturi ratione
-            placeat dolores repellat. Quod culpa quas nam voluptate.
+            The smart car park project aimed to detect occupied parking spaces
+            in the underground car park (as in shopping malls). The information
+            about the occupancy was supposed to help the employees of the office
+            to find a parking space. The system consists of modules suspended
+            above the parking place and a HUB that collects data from individual
+            modules. In the other hand, the module consists of an ultrasonic
+            sensor and a processor STM32 F103, which sends cyclically data via a
+            CAN interface to the HUB about its current state. Data from all
+            modules are sent to Backend, where they are then presented to the
+            user. The communication is also provided in both directions, i.e. it
+            is possible to configure the modules using an provided API.
           </p>
         </div>
 
         <div class="proj proj-1">
-          <input type="checkbox" id="zoomCheck">
+          <input type="checkbox" id="zoomCheck" />
           <label for="zoomCheck">
-          <img
-            src="img/projects/parking_1.jpg"
-            alt="Device"
-            class="project-image"
-          />
-        </label>
-          <h3>img1</h3>
+            <img
+              src="img/projects/parking_1.jpg"
+              alt="Device"
+              class="project-image"
+            />
+          </label>
+          <h3>Upper part of the parking module</h3>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam, rem
-            atque! Officia soluta nemo odit sint, veritatis accusamus voluptate
-            provident?
+            Each module is assigned an ID that corresponds to the place where it
+            hangs. The IDs are stored in flash memory, so that after a power
+            failure they will not be removed.
           </p>
         </div>
 
         <div class="proj proj-2">
-          <input type="checkbox" id="zoomCheck2">
+          <input type="checkbox" id="zoomCheck2" />
           <label for="zoomCheck2">
-          <img
-            src="img/projects/parking_2.jpg"
-            alt="Device"
-            class="project-image"
-          />
-        </label>
-          <h3>img2</h3>
+            <img
+              src="img/projects/parking_2.jpg"
+              alt="Device"
+              class="project-image"
+            />
+          </label>
+          <h3>Mounted parking module</h3>
           <p>
-            Lorem ipsum dolor sit amet.:
+            The modules are mounted on the ceiling in the underground car park.
           </p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
-          quos quidem est ut doloremque dolorem consequuntur cum ea ducimus
-          ipsam?
         </div>
 
         <div class="proj proj-3">
-          <input type="checkbox" id="zoomCheck3">
+          <input type="checkbox" id="zoomCheck3" />
           <label for="zoomCheck3">
-          <img
-            src="img/projects/parking_3.jpg"
-            alt="Device"
-            class="project-image"
-          />
-        </label>
-          <h3>img3</h3>
+            <img
+              src="img/projects/parking_3.jpg"
+              alt="Device"
+              class="project-image"
+            />
+          </label>
+          <h3>Picture of a part of the functioning system</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-            fugit iure iusto voluptate, ratione dolore optio nihil eligendi
-            dignissimos. Excepturi?
+            The modules indicate the occupied space by means of an LED so that
+            you can see from a distance whether the space is occupied or free.
           </p>
         </div>
       </div>
