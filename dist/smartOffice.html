@@ -64,15 +64,22 @@
         <div class="project">
           <h3 class="text-secondary">About the project</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
-            aperiam pariatur quo tempore magni ullam sapiente aut dignissimos!
-            Ut doloremque vitae corrupti, veritatis, quae cumque nisi dolorum
-            aspernatur nulla cupiditate natus temporibus non consequuntur
-            impedit in voluptatibus porro laborum velit excepturi ratione
-            placeat dolores repellat. Quod culpa quas nam voluptate.
+            The project serves the purpose of monitoring environmental
+            parameters such as temperature, humidity, co2 quantity and air
+            quality in the office and also monitors the presence of people in a
+            given room. The modules are based on ESP32 wroom processor, which is
+            connected to the network in the office. The module cyclically sends
+            information from the sensors via I2C interface. The program, unlike
+            others, is not pure BareMetal but has been implemented real-time
+            operating system FreeRtos. The server part deals with the processing
+            and presentation of data to the user. In the second version of the
+            project, which is visible in the photo is under development. The
+            second version, in addition to the monitoring of the presence of
+            people, has to control an information panel, which will be located
+            in front of a room (such as a conference room)
           </p>
         </div>
-<!-- 
+        <!-- 
         <div class="proj proj-1">
           <input type="checkbox" id="zoomCheck">
           <label for="zoomCheck">
@@ -91,21 +98,21 @@
         </div> -->
 
         <div class="proj proj-2">
-          <input type="checkbox" id="zoomCheck2">
+          <input type="checkbox" id="zoomCheck2" />
           <label for="zoomCheck2">
-          <img
-            src="img/projects/office.jpg"
-            alt="Device"
-            class="project-image"
-          />
-        </label>
-          <h3>img2</h3>
+            <img
+              src="img/projects/office.jpg"
+              alt="Device"
+              class="project-image"
+            />
+          </label>
+          <h3>PCB version 2</h3>
           <p>
-            Lorem ipsum dolor sit amet.:
+            The board has been designed in a circular shape because it is to be
+            mounted in a housing with a transparent dome. 3W LEDs have also been
+            installed to illuminate the devices to indicate the occupancy of the
+            room, where there will be no information panel.
           </p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
-          quos quidem est ut doloremque dolorem consequuntur cum ea ducimus
-          ipsam?
         </div>
 
         <!-- <div class="proj proj-3">
