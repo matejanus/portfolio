@@ -1,3 +1,9 @@
+@keyframes animate {
+  0% {
+    width: 0; }
+  100% {
+    width: 100%; } }
+
 .menu-btn {
   position: absolute;
   z-index: 3;
@@ -186,6 +192,52 @@ main {
     background: #515151;
     padding: 0.5rem;
     border-bottom: #eece1a 5px solid; }
+    .about-info .skill h3 {
+      text-transform: uppercase; }
+    .about-info .skill h4 {
+      text-align: left;
+      font-weight: normal;
+      margin: 0 0 0.1rem 0; }
+    .about-info .skill .line {
+      height: 1rem;
+      margin: 0;
+      line-height: 1rem;
+      font-size: 0.9rem;
+      color: #333;
+      padding: 0 0 0 0;
+      position: relative;
+      text-align: center;
+      font-weight: bold;
+      z-index: 0; }
+      .about-info .skill .line:before {
+        content: '';
+        width: 100%;
+        position: absolute;
+        left: 0;
+        height: 1rem;
+        top: 0;
+        z-index: -1;
+        background: #d2d6d7; }
+      .about-info .skill .line:after {
+        content: '';
+        background: #eece1a;
+        height: 1rem;
+        transition: 0.8s;
+        display: block;
+        width: 100%;
+        animation: animate 1 6s;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1; }
+    .about-info .skill .line1:after {
+      max-width: 90%; }
+    .about-info .skill .line2:after {
+      max-width: 80%; }
+    .about-info .skill .line3:after {
+      max-width: 70%; }
+    .about-info .skill .line4:after {
+      max-width: 75%; }
 
 .projects {
   display: grid;
@@ -343,7 +395,7 @@ main {
       width: 145px;
       height: 145px; }
   .about-info {
-    grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
+    grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3' 'skill';
     grid-template-columns: 1fr; }
   .project-info {
     grid-template-areas: 'projInfo' 'proj1' 'proj2' 'proj3';
