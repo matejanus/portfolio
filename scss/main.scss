@@ -170,7 +170,7 @@ main {
     }
     .line1{
       &:after{
-        max-width: 90%;
+        max-width: 70%;
       }
     }
     .line2{
@@ -180,14 +180,40 @@ main {
     }
     .line3{
       &:after{
-        max-width: 70%;
+        max-width: 80%;
       }
     }
     .line4{
       &:after{
-        max-width: 75%;
+        max-width: 85%;
       }
     }
+    .line5{
+      &:after{
+        max-width: 70%;
+      }
+    }
+    .line6{
+      &:after{
+        max-width: 60%;
+      }
+      }
+    .line7{
+      &:after{
+        max-width: 90%;
+      }
+      }
+    .line8{
+      &:after{
+        max-width: 90%;
+      }
+    }
+    .line9{
+      &:after{
+        max-width: 30%;
+      }
+    }
+    
   }
 
 }
