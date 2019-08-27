@@ -58,58 +58,76 @@
         Balancing <span class="text-secondary">Robot</span>
       </h1>
       <h2 class="sm-heading">
-       Balancing Robot folowing a tenis ball
+        Balancing Robot folowing a tenis ball
       </h2>
       <div class="project-info">
         <div class="project">
           <h3 class="text-secondary">About the project</h3>
           <p>
-            TBD
+            The project was carried out in a group of 3 people as part of the
+            team project classes in engineering studies. The goal of the project
+            was to create a balancing robot that would follow the tennis ball.
+            Reaching the target was supposed to be indicated by a sound signal,
+            and it was to be able to be remotely controlled by a mobile
+            application. We wanted to stabilize the robot on two wheels by using
+            accelerometers and gyros to control the engines (PID). Image
+            recognition was mainly my task. I managed to realize them by
+            implementing a neural network from prepared samples. The problem was
+            the influence of external lights, but I managed to recognize the
+            ball in real time, however, we could not achieve stabilization of
+            the robot on 2 wheels, so we limited its functionality to locate the
+            ball and drive up to it, and to remote control of the robot through
+            bluetooth and a mobile application.
           </p>
         </div>
 
         <div class="proj proj-1">
-          <input type="checkbox" id="zoomCheck">
+          <input type="checkbox" id="zoomCheck" />
           <label for="zoomCheck">
-          <img
-            src="img/projects/balancing_robot_1.png"
-            alt="Device"
-            class="project-image"
-          />
-        </label>
+            <img
+              src="img/projects/balancing_robot_1.png"
+              alt="Device"
+              class="project-image"
+            />
+          </label>
           <h3>The first version of the robot's mechanical design</h3>
           <p>
-            TBD
+            This is the first version of the robot that was supposed to be
+            stable on two wheels, but due to the used engines, we were unable to
+            achieve stabilization.
           </p>
         </div>
 
         <div class="proj proj-2">
-          <input type="checkbox" id="zoomCheck2">
+          <input type="checkbox" id="zoomCheck2" />
           <label for="zoomCheck2">
-          <img
-            src="img/projects/balancing_robot_2.png"
-            alt="Device"
-            class="project-image"
-          />
-        </label>
+            <img
+              src="img/projects/balancing_robot_2.png"
+              alt="Device"
+              class="project-image"
+            />
+          </label>
           <h3>3D model of the designed robot controller</h3>
           <p>
-            TBD
+            PCB for sensor data collection and motor control. The board was also
+            connected to a Raspberry Pi to control the robot in the direction of
+            the ball.
           </p>
         </div>
 
         <div class="proj proj-3">
-          <input type="checkbox" id="zoomCheck3">
+          <input type="checkbox" id="zoomCheck3" />
           <label for="zoomCheck3">
-          <img
-            src="img/projects/balancing_robot_3.png"
-            alt="Device"
-            class="project-image"
-          />
-        </label>
+            <img
+              src="img/projects/balancing_robot_3.png"
+              alt="Device"
+              class="project-image"
+            />
+          </label>
           <h3>The development process of a tennis ball recognition</h3>
           <p>
-            TBD
+            Screenshot taken during the implementation of the ball detection
+            algorithm and determining the direction in which the robot should go
           </p>
         </div>
       </div>
